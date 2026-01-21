@@ -1,0 +1,129 @@
+
+
+# Autonomous Threat Recognition System
+
+## Overview
+
+This project implements a **real-time Autonomous Threat Recognition system** using computer vision and deep learning.
+It detects and highlights **weapons, vehicles, and hostile movement** from:
+
+* Live laptop camera feed
+* Pre-recorded video files
+
+The system **records annotated video**, **logs detections**, and **generates an Excel report**, all saved with **date and time for traceability**.
+
+---
+
+## Key Features
+
+* Real-time object and threat detection
+* Supports live camera and video file input
+* Bounding box highlighting with confidence score
+* Press **`q`** to safely stop execution
+* Automatic **date–time based video recording**
+* Automatic **Excel threat report generation**
+* Clean folder structure for audit and review
+
+---
+
+## Technology Stack
+
+* Python 3.9+
+* OpenCV
+* YOLOv8 (Ultralytics)
+* Pandas
+* OpenPyXL
+
+---
+
+## Folder Structure
+
+```
+outputs/
+ └── YYYY-MM-DD/
+     ├── threat_recording_YYYY-MM-DD_HH-MM-SS.mp4
+     └── threat_report_YYYY-MM-DD_HH-MM-SS.xlsx
+```
+
+---
+
+## Installation
+
+Install required dependencies:
+
+```
+pip install ultralytics opencv-python pandas openpyxl
+```
+
+---
+
+## How to Run (SOP)
+
+### Step 1: Start the program
+
+```
+python threat_detection.py
+```
+
+### Step 2: Select input source
+
+* Enter **1** for live laptop camera
+* Enter **2** for video file and provide file path
+
+### Step 3: Monitoring
+
+* Detection boxes and labels appear on the live feed
+* Video is recorded automatically
+* Detection data is logged internally
+
+### Step 4: Quit safely
+
+* Press **`q`** anytime to stop execution gracefully
+
+---
+
+## Output
+
+After execution:
+
+* Annotated video is saved with **date & time**
+* Excel report is generated containing:
+
+  * Date
+  * Time
+  * Threat Type
+  * Detected Object
+  * Confidence Score
+
+---
+
+## Supported Detection Categories
+
+* Weapons (example: knife, gun – model dependent)
+* Vehicles (car, truck, bus, motorbike)
+* Human presence (used as hostile movement indicator)
+
+---
+
+## Notes
+
+* Default model: `yolov8n.pt`
+* Can be replaced with a **custom-trained model** for higher accuracy
+* Works on CPU; GPU recommended for higher FPS
+
+---
+
+## Use Cases
+
+* Smart surveillance
+* Defense and law enforcement demos
+* Critical infrastructure monitoring
+* Research and academic projects
+
+---
+
+## Disclaimer
+
+This system is intended for **research, demonstration, and assistive monitoring purposes**.
+Final threat assessment should always involve **human validation**.
+contact : kajaldadas149@gmail.com
