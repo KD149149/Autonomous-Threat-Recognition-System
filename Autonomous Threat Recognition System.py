@@ -1,3 +1,10 @@
+
+
+# ## Author & Contact
+# **Code by:** Kajal Dadas
+# For detailed projects, collaborations, or deployment discussions:
+# Email:** kajaldadas149@gmail.com
+
 # import cv2
 # import os
 # import pandas as pd
@@ -243,3 +250,4 @@ print("Threat Recognition Session Closed")
 print(f"Video saved : {video_out_path}")
 print(f"Report saved: {excel_out_path}")
 print("===================================")
+
