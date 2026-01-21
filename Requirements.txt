@@ -1,0 +1,7 @@
+#pip install ultralytics opencv-python pandas openpyxl
+ultralytics>=8.0.0
+opencv-python>=4.8.0
+pandas>=1.5.0
+openpyxl>=3.1.0
+numpy>=1.23.0
+#pip install -r requirements.txt
